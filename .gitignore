@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Project Files
+/yarn.lock
+/NodeJS.cmake
+/build/
+/node_modules/
