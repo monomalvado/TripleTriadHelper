@@ -1,7 +1,7 @@
 {
   "name": "node-addon-redux",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/Release/node_addon_redux.node",
   "gypfile": true,
   "license": "ISC",
   "scripts": {
