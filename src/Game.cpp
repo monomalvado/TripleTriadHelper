@@ -39,8 +39,8 @@ void Game::playNew() {
     int oneScore = board.mineInPlay() + board.mineInHand();
     int twoScore = board.oppInPlay() + board.oppInHand();
     std::cout << std::endl << "Final score:" << std::endl
-              << one << " - " << oneScore << std::endl
-              << two << " - " << twoScore << std::endl;
+              << *one << " - " << oneScore << std::endl
+              << *two << " - " << twoScore << std::endl;
 }
 
 void Game::playNew(Hand& handOne, Hand& handTwo) {
@@ -70,8 +70,8 @@ void Game::playNew(Hand& handOne, Hand& handTwo) {
     int oneScore = board.mineInPlay() + board.mineInHand();
     int twoScore = board.oppInPlay() + board.oppInHand();
     std::cout << std::endl << "Final score:" << std::endl
-              << one << " - " << oneScore << std::endl
-              << two << " - " << twoScore << std::endl;
+              << *one << " - " << oneScore << std::endl
+              << *two << " - " << twoScore << std::endl;
 }
 
 std::ostream &operator<<(std::ostream &os, const Game &game) {
