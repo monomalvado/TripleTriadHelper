@@ -18,7 +18,7 @@ public:
     const static int MAX_VALUE = 10;
 
     Card();
-    Card(int, int, int, int);
+    Card(int, int, int, int) noexcept(false);
 
     int getTop() const;
     void setTop(int top);

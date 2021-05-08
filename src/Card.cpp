@@ -7,7 +7,7 @@
 
 Card::Card() : top(0), right(0), bottom(0), left(0), sum(0) {}
 
-Card::Card(int top, int right, int bottom, int left)
+Card::Card(int top, int right, int bottom, int left) noexcept(false)
 : top(top), left(left), bottom(bottom), right(right), sum(top+right+bottom+left)
 {
     if ( top < Card::MIN_VALUE || top > Card::MAX_VALUE ||
@@ -15,7 +15,7 @@ Card::Card(int top, int right, int bottom, int left)
             bottom < Card::MIN_VALUE || bottom > Card::MAX_VALUE ||
             left < Card::MIN_VALUE || left > Card::MAX_VALUE
     ) {
-        throw std::exception();
+        throw std::exception("Invalid Card");
     }
 }
 
